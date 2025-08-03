@@ -2,6 +2,11 @@
 
 // To change portfolio colors globally go to the  _globalColor.scss file
 
+
+// https://github.com/30047shivam?tab=repositories
+
+// https://portshivamfolio.vercel.app/#services
+
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
@@ -20,8 +25,8 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Shubham Gupta",
+  title: "Hi I am Shubham Gupta",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
@@ -33,13 +38,13 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/im-shubhamgupta",
+  linkedin: "https://www.linkedin.com/in/shubham-gupta-200761191",
+  gmail: "shubhamkumargupta8@gmail.com",
+  // gitlab: "https://gitlab.com/",
+  // facebook: "https://www.facebook.com",
+  // medium: "https://medium.com/",
+  // stackoverflow: "https://stackoverflow.com/,
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +54,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Backend DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop a Robust and Scalable Web Applications with a Best User Experience"
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Integration of third party services such as Firebase/ AWS / Payment Gateway"
     )
   ],
 
@@ -73,10 +78,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
@@ -89,15 +90,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "sql-database",
+      skillName: "Mysql-database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
@@ -107,10 +104,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "docker",
@@ -126,44 +119,88 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
+      schoolName: "Nielit University",
+      logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "O Level Foundation Course in Information Technology",
+      duration: "2021 - 2022",
+      desc: "Completed my O Level Foundation Course in Information Technology with 71% marks. I have done my O Level from Nielit University, Bokaro, Jharkhand.",
+      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+    },
+    {
+      schoolName: "Vinoba Bhave University",
       logo: require("./assets/images/harvardLogo.png"),
       subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      duration: "April 2014 - August 2017",
+      desc: "Complete my Bachelor's Degree in Commerce with 69% marks. I have done my Bachelors in Commerce from Vinoba Bhave University, Hazaribagh, Jharkhand.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
+      schoolName: "Higher Secondry Education (12th)",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Jharkhand Academic Council",
+      duration: "April 2012 - April 2014",
+      desc: "Complete my Higher Secondary Education with 72% marks.",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
+    },
+    {
+      schoolName: "Secondry Education (10th)",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "Jharkhand Academic Council",
+      duration: "Completed on 2012",
+      // desc: "Complete ",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
+    },
+    
   ]
 };
 
 // Your top 3 proficient stacks/tech experience
-
+/*Proficiencies:
+- Languages: PHP (Advanced), JavaScript (Proficient), Python (Intermediate)
+- Frameworks: Laravel (Advanced), CodeIgniter (Proficient)
+- Databases: MySQL (Advanced), DynamoDB (Intermediate)
+- Tools: Git, Postman, Composer*/
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
-    {
+    /*{
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
+    },*/
+    {
+      Stack: "Backend Developer",
+      progressPercentage: "100%"
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Laravel Framework",
+      progressPercentage: "100%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Node.js, Expess.js",
+      progressPercentage: "80%"
+    },
+    // {
+    //   Stack: "React.js",
+    //   progressPercentage: "80%"
+    // },
+    {
+      Stack: "HTML/CSS Javascript",
+      progressPercentage: "100%"
+    },
+    {
+      Stack: "MySQL, DynamoDB, MongoDB",
+      progressPercentage: "80%"
     }
+
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -174,10 +211,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
+      role: "Software Developer",
+      company: "Rjs Tech Solutions",
       companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      date: "July 2023 - January 2025",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -185,17 +222,17 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
+      role: "Software Developer",
+      company: "iSoftcare Technology",
       companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
+      date: "August 2022 - June 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
+      role: "Php Developer (Intern)",
+      company: "Jharkhand It Solutions",
       companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      date: "May 2022 - July 2022",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
@@ -217,12 +254,13 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Satvic Movement",
+      projectDesc: "Satvic Movement is India's largest community driven health revolution helping you reach the peak of your physical, mental, and spiritual well-being.",
+      //      projectDesc: "This is a health and wellness platform that promotes a plant-based lifestyle.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://satvicmovement.org/"
         }
         //  you can add extra buttons here.
       ]
@@ -372,8 +410,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+91 7004083341",
+  email_address: "shubhamkumargupta8@gmail.com"
 };
 
 // Twitter Section
