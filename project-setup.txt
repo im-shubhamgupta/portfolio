@@ -1,0 +1,34 @@
+
+
+********Install Node js**********
+
+sudo apt update
+sudo apt install nodejs npm -y
+
+
+npm -v 9.2.0
+
+node-v  18.19.1
+
+npm run start
+
+
+source:  https://github.com/saadpasta/developerFolio.git
+
+
+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  //tok
+
+
+
+
+*********Git Setup************
+git config --list
+git remove -v
+
+
+
+git remote set-url --push origin https://github.com/im-shubhamgupta/portfolio.git
+
+git remote set-url origin https://github.com/im-shubhamgupta/portfolio.git
+
+
