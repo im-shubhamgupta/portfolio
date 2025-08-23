@@ -26,7 +26,7 @@ const illustration = {
 
 const greeting = {
   username: "Shubham Gupta",
-  title: "Hi I am Shubham Gupta",
+  title: "Hi, I am Shubham Gupta",
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
@@ -61,7 +61,7 @@ const skillsSection = {
     ),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Payment Gateway"
+      "⚡ Integration of third party services such as Firebase/ AWS / Razorpay Payment Gateway"
     )
   ],
 
@@ -120,29 +120,29 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Nielit University",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/logo/nielit-logo.avif"),
       subHeader: "O Level Foundation Course in Information Technology",
       duration: "2021 - 2022",
       desc: "Completed my O Level Foundation Course in Information Technology with 71% marks. I have done my O Level from Nielit University, Bokaro, Jharkhand.",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      // descBullets: ["Lorem ipsum dolor sit amet, consectetur ad  ipiscing elit"]
     },
     {
       schoolName: "Vinoba Bhave University",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/logo/vbu-logo.avif"),
       subHeader: "Master of Science in Computer Science",
       duration: "April 2014 - August 2017",
-      desc: "Complete my Bachelor's Degree in Commerce with 69% marks. I have done my Bachelors in Commerce from Vinoba Bhave University, Hazaribagh, Jharkhand.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc: "Completed my Bachelor's Degree in Commerce with 69% marks. I have done my Bachelors in Commerce from Vinoba Bhave University, Hazaribagh, Jharkhand.",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
       schoolName: "Higher Secondry Education (12th)",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/logo/jac-logo.avif"),
       subHeader: "Jharkhand Academic Council",
       duration: "April 2012 - April 2014",
-      desc: "Complete my Higher Secondary Education with 72% marks.",
+      desc: "Complete my Higher Secondary Education with 58.4% marks.",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -150,9 +150,9 @@ const educationInfo = {
     },
     {
       schoolName: "Secondry Education (10th)",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/logo/jac-logo.avif"),
       subHeader: "Jharkhand Academic Council",
-      duration: "Completed on 2012",
+      duration: "Complete my Secondary Education with 62.6% marks.",
       // desc: "Complete ",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -211,9 +211,20 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "PHP Developer",
+      company: "Talentrack",
+      companylogo: require("./assets/images/logo/talentrack-logo.avif"),
+      date: "Febraury 2025 - Present",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    },
+    {
       role: "Software Developer",
       company: "Rjs Tech Solutions",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/logo/rjs-logo.avif"),
       date: "July 2023 - January 2025",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
@@ -224,14 +235,14 @@ const workExperiences = {
     {
       role: "Software Developer",
       company: "iSoftcare Technology",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: require("./assets/images/logo/isoftcare-logo.avif"),
       date: "August 2022 - June 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       role: "Php Developer (Intern)",
       company: "Jharkhand It Solutions",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("./assets/images/logo/jis-logo.avif"),
       date: "May 2022 - July 2022",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
@@ -243,7 +254,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -253,7 +264,20 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/logo/talentrack-logo.avif"),
+      projectName: "Content Marketplace",
+      projectDesc: "Find Agencies, Freelancers, and Influencers to create contents for your brand.",
+      //      projectDesc: "This is a health and wellness platform that promotes a plant-based lifestyle.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://talentrack.in/"
+        //  you can add extra buttons here.
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/logo/satvic-logo.avif"),
       projectName: "Satvic Movement",
       projectDesc: "Satvic Movement is India's largest community driven health revolution helping you reach the peak of your physical, mental, and spiritual well-being.",
       //      projectDesc: "This is a health and wellness platform that promotes a plant-based lifestyle.",
@@ -266,16 +290,72 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/logo/bazaloni-logo.png"),
+      projectName: "Bazaloni",
+      projectDesc: "Bazaloni is CRM Software for Maintaining selling and purchase with Auction Tea leafs in all over india",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "http://www.bazaloni.com/"
         }
       ]
-    }
+    },
+    {
+      image: require("./assets/images/logo/abhigya-logo.avif"),
+      projectName: "Institute Management Software",
+      projectDesc: "Institute Management Software to streamline operations including admissions, student records, fee collection, timetable scheduling, attendance tracking, and communication modules; improved administrative efficiency by automating manual processes and enabling real-time access to academic and financial data.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://www.abhigya.in/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/logo/harrison-logo.png"),
+      projectName: "Harrison",
+      projectDesc: "Harrison is a CRM Software for Maintaining selling and purchase with of his own products in all over india",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ],
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://www.harrisonlocks.com/"
+        }
+      ]
+    },
+     {
+      image: require("./assets/images/logo/phindbooks-logo.png"),
+      projectName: "PhindBooks",
+      projectDesc: "Harrison is a CRM Software for Maintaining selling and purchase with of his own products in all over india",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ],
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://phindbooks.ae/"
+        }
+      ]
+    },
+     {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Hotel Management System",
+      projectDesc: "Harrison is a CRM Software for Maintaining selling and purchase with of his own products in all over india",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ],
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "http://www.harrisonlocks.com/"
+        }
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -284,13 +364,13 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Certifications"),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Certifications that I have done !",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "C++ Programming",
       subtitle:
         "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
       image: require("./assets/images/codeInLogo.webp"),
@@ -311,9 +391,9 @@ const achievementSection = {
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Computer Hardware",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "Complete Computer Hardware Course from Government NSDC, Bokaro",
       image: require("./assets/images/googleAssistantLogo.webp"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
@@ -325,7 +405,7 @@ const achievementSection = {
     },
 
     {
-      title: "PWA Web App Developer",
+      title: "Tally Accounting",
       subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",

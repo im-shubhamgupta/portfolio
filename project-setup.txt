@@ -1,4 +1,6 @@
 
+https://github.com/saadpasta/developerFolio    portfolio
+
 
 ********Install Node js**********
 
@@ -30,5 +32,13 @@ git remove -v
 git remote set-url --push origin https://github.com/im-shubhamgupta/portfolio.git
 
 git remote set-url origin https://github.com/im-shubhamgupta/portfolio.git
+
+
+
+***********************Git local setup for this Project***************
+git config --local user.name "Your Project Name"
+git config --local user.email "yourproject@email.com"
+
+git config --list --local
 
 

@@ -1,0 +1,48 @@
+How React js works with without page refresh. The changes get auto reflected on browser.
+In the case of node.js we need to install nodemon for these type of changes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Key Modules & Features
+
+Institute Management Software के अंदर आमतौर पर ये modules होते हैं:
+Module	Description
+Admission & Enrollment	Student registration, online application, admission approvals
+Student Information System (SIS)	Student profile, attendance, academic history, documents
+Fee Management	Fee collection, receipts, dues tracking, online payment gateway
+Attendance Management	Manual/biometric attendance, SMS/email alerts
+Timetable Management	Automated timetable creation, class scheduling
+Examination Management	Online/offline exams, marks entry, report cards generation
+Library Management	Book catalog, issue/return, fine calculation
+Staff/HR Management	Teacher/staff details, payroll, leave management
+Communication Tools	SMS, email, push notifications for parents, students, staff
+Reports & Analytics	Academic performance reports, finance reports
+Online Learning Integration	E-learning, assignments, study materials, video classes
