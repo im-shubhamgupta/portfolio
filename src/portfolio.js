@@ -24,11 +24,12 @@ const illustration = {
   animated: true // Set to false to use static SVG
 };
 
+//  "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
 const greeting = {
   username: "Shubham Gupta",
   title: "Hi, I am Shubham Gupta",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Backend Developer 🚀 specializing in Laravel, MySQL, DynamoDB, and Node.js, helping businesses achieve growth through secure and scalable web solutions."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -129,9 +130,9 @@ const educationInfo = {
     {
       schoolName: "Vinoba Bhave University",
       logo: require("./assets/images/logo/vbu-logo.avif"),
-      subHeader: "Master of Science in Computer Science",
+      subHeader: "Bachelor's Degree",
       duration: "April 2014 - August 2017",
-      desc: "Completed my Bachelor's Degree in Commerce with 69% marks. I have done my Bachelors in Commerce from Vinoba Bhave University, Hazaribagh, Jharkhand.",
+      desc: "Completed my Bachelor's Degree with 69% marks. I have done my Bachelors in Commerce from Vinoba Bhave University, Hazaribagh, Jharkhand.",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -152,8 +153,8 @@ const educationInfo = {
       schoolName: "Secondry Education (10th)",
       logo: require("./assets/images/logo/jac-logo.avif"),
       subHeader: "Jharkhand Academic Council",
-      duration: "Complete my Secondary Education with 62.6% marks.",
-      // desc: "Complete ",
+      duration: "April 2012",
+      desc: "Complete my Secondary Education with 62.6% marks.",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -170,12 +171,12 @@ const educationInfo = {
 - Databases: MySQL (Advanced), DynamoDB (Intermediate)
 - Tools: Git, Postman, Composer*/
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
-    /*{
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },*/
+    // {
+    //   Stack: "Frontend/Design", //Insert stack or technology you have experience in
+    //   progressPercentage: "90%" //Insert relative proficiency in percentage
+    // },
     {
       Stack: "Backend Developer",
       progressPercentage: "100%"
@@ -214,37 +215,41 @@ const workExperiences = {
       role: "PHP Developer",
       company: "Talentrack",
       companylogo: require("./assets/images/logo/talentrack-logo.avif"),
+      href: "https://talentrack.in",
       date: "Febraury 2025 - Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Talentrack.in is India's leading online platform and content marketplace for the Media, Entertainment, and Creative (MECA) industries. It connects businesses with a wide range of creative professionals, including agencies, freelancers, and influencers, to help them create high-quality content for their brands.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
     {
       role: "Software Developer",
       company: "Rjs Tech Solutions",
+      href: "https://rjs.in/",
       companylogo: require("./assets/images/logo/rjs-logo.avif"),
       date: "July 2023 - January 2025",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "RJS is a leading game and app development company based out of Kolkata, India. Our products are available across all major mobile and web platforms.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
     {
       role: "Software Developer",
       company: "iSoftcare Technology",
+      href: "https://isoftcare.com/",
       companylogo: require("./assets/images/logo/isoftcare-logo.avif"),
       date: "August 2022 - June 2023",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "iSoftcare Technology is a Servie based Company. it provide the solution IT Solutions for Web and Mobile. Company based on Delhi."
     },
     {
       role: "Php Developer (Intern)",
       company: "Jharkhand It Solutions",
+      href: "https://www.jharkhanditsolutions.com/",
       companylogo: require("./assets/images/logo/jis-logo.avif"),
       date: "May 2022 - July 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Jharkhand It Solutions is development Companies"
     }
   ]
 };
@@ -261,7 +266,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Projects Where I Contributed to Achieving Business Success",//SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
       image: require("./assets/images/logo/talentrack-logo.avif"),
@@ -329,7 +334,7 @@ const bigProjects = {
      {
       image: require("./assets/images/logo/phindbooks-logo.png"),
       projectName: "PhindBooks",
-      projectDesc: "Harrison is a CRM Software for Maintaining selling and purchase with of his own products in all over india",
+      projectDesc: " Phindbook is an online book retailer and physical store based in Dubai, UAE, specializing in a wide range of books, including children's books, self-help, business, young adult, manga, and academic (CBSE and UK school) books. ",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -342,9 +347,9 @@ const bigProjects = {
       ]
     },
      {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/logo/hotel-managment-system.png"),   //https://isoftcare.in/demo/hotel/index.php
       projectName: "Hotel Management System",
-      projectDesc: "Harrison is a CRM Software for Maintaining selling and purchase with of his own products in all over india",
+      projectDesc: "Hotel Management System built to automate reservations, check-in/out, and billing. It features a user-friendly interface for staff to manage room availability, guest information.",
       // descBullets: [
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -352,7 +357,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://www.harrisonlocks.com/"
+          url: "https://isoftcare.in/demo/hotel/index.php"
         }
       ]
     },
@@ -370,51 +375,51 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "C++ Programming",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+      title: "C++ Programming",//"First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      subtitle:"Certified in C++ programming with strong knowledge of object-oriented concepts, data structures, and algorithmic problem solving.",
+      image: require("./assets/images/logo/cpp-logo.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1PnA_4ygfnKEwjXEdWLBGvydi3okt6SIG/view"
         },
-        {
+        //   I have Complete my C++ Programmin Languge with a best Institute with efforts and learned great things and certified from West Bengal Government",
+        /*{
           name: "Award Letter",
           url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
         },
         {
           name: "Google Code-in Blog",
           url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+        }*/
       ]
     },
     {
-      title: "Computer Hardware",
+      title: "Computing and Peripherals",
       subtitle:
-        "Complete Computer Hardware Course from Government NSDC, Bokaro",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+        "Certified in Field Technician - Computing and Peripherals (NSQF Level-4), providing strong fundamentals in computer hardware, OS setup, and troubleshooting, which enhance my backend development and deployment skills",
+      image: require("./assets/images/logo/NSDC-logo.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1mKaie8wMDTnlrcgh_-jZaf7KFBWD0ZNu/view"
         }
       ]
     },
 
     {
       title: "Tally Accounting",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      subtitle: "Certified in Tally Accounting with strong understanding of bookkeeping, GST, payroll, and financial reporting.",
+      image: require("./assets/images/logo/tally.png"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        {name: "Certification", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
       ]
     }
   ],
@@ -442,7 +447,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -461,7 +466,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -474,7 +479,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
 // Resume Section
@@ -488,11 +493,12 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
+  href: "https://api.whatsapp.com/send?phone=7004083341&amp;text=Hi%20Shubham",
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+91 7004083341",
   email_address: "shubhamkumargupta8@gmail.com"
-};
+};//
 
 // Twitter Section
 

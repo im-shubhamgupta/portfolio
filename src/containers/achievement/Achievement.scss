@@ -14,6 +14,9 @@
 .subTitle {
   color: $subTitle;
 }
+.certificate-detail-div .card-subtitle{
+  height: 109px;
+}
 
 /* Media Query */
 @media (max-width: 1380px) {
