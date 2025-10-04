@@ -14,6 +14,8 @@ node-v  18.19.1
 
 npm run start
 
+npm run build      //also for vite
+
 
 source:  https://github.com/saadpasta/developerFolio.git
 
@@ -22,8 +24,7 @@ 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  //tok
 
 
 
-
-*********Git Setup************
+***********************Git local setup for this Project***************
 git config --list
 git remove -v
 
@@ -33,9 +34,6 @@ git remote set-url --push origin https://github.com/im-shubhamgupta/portfolio.gi
 
 git remote set-url origin https://github.com/im-shubhamgupta/portfolio.git
 
-
-
-***********************Git local setup for this Project***************
 git config --local user.name "Your Project Name"
 git config --local user.email "yourproject@email.com"
 
