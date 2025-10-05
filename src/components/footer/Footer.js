@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="footer-div">
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           
-          {emoji("Turning your Business ideas into technology — with a powerful strategy & top-notch security.❤️")}
+          {emoji("Turning your Business ideas into Technology — with a powerful strategy & top-notch security.❤️")}
         </p>
         {/* <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           Theme by{" "}
