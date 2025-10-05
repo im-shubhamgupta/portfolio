@@ -121,7 +121,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Nielit University",
-      logo: require("./assets/images/logo/nielit-logo.avif"),
+      logo: require("./assets/images/logo/nielit-logo.webp"),
       subHeader: "O Level Foundation Course in Information Technology",
       duration: "2021 - 2022",
       desc: "Completed my O Level Foundation Course in Information Technology with 71% marks. I have done my O Level from Nielit University, Bokaro, Jharkhand.",
@@ -129,7 +129,7 @@ const educationInfo = {
     },
     {
       schoolName: "Vinoba Bhave University",
-      logo: require("./assets/images/logo/vbu-logo.avif"),
+      logo: require("./assets/images/logo/vbu-logo.png"),
       subHeader: "Bachelor's Degree",
       duration: "April 2014 - August 2017",
       desc: "Completed my Bachelor's Degree with 69% marks. I have done my Bachelors in Commerce from Vinoba Bhave University, Hazaribagh, Jharkhand.",
@@ -140,7 +140,7 @@ const educationInfo = {
     },
     {
       schoolName: "Higher Secondry Education (12th)",
-      logo: require("./assets/images/logo/jac-logo.avif"),
+      logo: require("./assets/images/logo/jac-logo.webp"),
       subHeader: "Jharkhand Academic Council",
       duration: "April 2012 - April 2014",
       desc: "Complete my Higher Secondary Education with 58.4% marks.",
@@ -151,7 +151,7 @@ const educationInfo = {
     },
     {
       schoolName: "Secondry Education (10th)",
-      logo: require("./assets/images/logo/jac-logo.avif"),
+      logo: require("./assets/images/logo/jac-logo.webp"),
       subHeader: "Jharkhand Academic Council",
       duration: "April 2012",
       desc: "Complete my Secondary Education with 62.6% marks.",
@@ -227,7 +227,7 @@ const workExperiences = {
       role: "Software Developer",
       company: "Rjs Tech Solutions",
       href: "https://rjs.in/",
-      companylogo: require("./assets/images/logo/rjs-logo.avif"),
+      companylogo: require("./assets/images/logo/rjs-logo3.jpg"),
       date: "July 2023 - January 2025",
       desc: "RJS is a leading game and app development company based out of Kolkata, India. Our products are available across all major mobile and web platforms.",
       descBullets: [
@@ -239,7 +239,7 @@ const workExperiences = {
       role: "Software Developer",
       company: "iSoftcare Technology",
       href: "https://isoftcare.com/",
-      companylogo: require("./assets/images/logo/isoftcare-logo.avif"),
+      companylogo: require("./assets/images/logo/isoftcare-logo.png"),
       date: "August 2022 - June 2023",
       desc: "iSoftcare Technology is a Servie based Company. it provide the solution IT Solutions for Web and Mobile. Company based on Delhi."
     },
@@ -247,7 +247,7 @@ const workExperiences = {
       role: "Php Developer (Intern)",
       company: "Jharkhand It Solutions",
       href: "https://www.jharkhanditsolutions.com/",
-      companylogo: require("./assets/images/logo/jis-logo.avif"),
+      companylogo: require("./assets/images/logo/jis-web-logo.png"),
       date: "May 2022 - July 2022",
       desc: "Jharkhand It Solutions is development Companies"
     }
@@ -295,7 +295,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/logo/bazaloni-logo.png"),
+      image: require("./assets/images/logo/bazaloni.png"),
       projectName: "Bazaloni",
       projectDesc: "Bazaloni is CRM Software for Maintaining selling and purchase with Auction Tea leafs in all over india",
       footerLink: [
@@ -306,7 +306,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/logo/abhigya-logo.avif"),
+      image: require("./assets/images/logo/abhigya-logo.png"),
       projectName: "Institute Management Software",
       projectDesc: "Institute Management Software to streamline operations including admissions, student records, fee collection, timetable scheduling, attendance tracking, and communication modules; improved administrative efficiency by automating manual processes and enabling real-time access to academic and financial data.",
       footerLink: [
@@ -484,11 +484,11 @@ const podcastSection = {
 
 // Resume Section
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
+//   title: "Resume",
+//   subtitle: "Feel free to download my resume",
 
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+//   // Please Provide with Your Podcast embeded Link
+//   display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {

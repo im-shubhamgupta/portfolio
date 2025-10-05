@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
-            <a href={contactInfo.href || '#'} target="_blank">
+            <a href={contactInfo.href || '#'} target="_blank" rel="noopener noreferrer">
               <h1 className="heading contact-title">{contactInfo.title}</h1>
             </a>
             <p

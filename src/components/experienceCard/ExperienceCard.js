@@ -34,7 +34,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
       <div style={{background: rgb(colorArrays)}} className="experience-banner">
         <div className="experience-blurred_div"></div>
-        <a href={cardInfo.href} target="_blank">
+        <a href={cardInfo.href} target="_blank" rel="noopener noreferrer">
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>
         </div>
