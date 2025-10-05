@@ -1,6 +1,16 @@
 
 https://github.com/saadpasta/developerFolio    portfolio
 
+****RUN  the Project****
+
+    npm run start
+
+-------check production error----
+    npm run build
+    npx serve -s build
+
+
+
 
 ********Install Node js**********
 
