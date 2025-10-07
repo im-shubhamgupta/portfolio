@@ -1,3 +1,7 @@
 add Readmore in portfolio..    
 
 set images at all 
+
+add more projects 
+
+first create structure in projects
