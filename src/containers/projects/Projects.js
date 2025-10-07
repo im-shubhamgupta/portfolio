@@ -16,7 +16,9 @@ export default function Projects() {
 
   useEffect(() => {
     const getRepoData = () => {
-      fetch("/profile.json")
+      const baseUrl = process.env.PUBLIC_URL || "";
+      // fetch(/profile.json`)
+      fetch(`${baseUrl}/profile.json`)
         .then(result => {
           if (result.ok) {
             return result.json();

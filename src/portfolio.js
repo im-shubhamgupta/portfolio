@@ -239,7 +239,7 @@ const workExperiences = {
       role: "Software Developer",
       company: "iSoftcare Technology",
       href: "https://isoftcare.com/",
-      companylogo: require("./assets/images/logo/isoftcare-logo.png"),
+      companylogo: require("./assets/images/logo/isoft-logo.png"),
       date: "August 2022 - June 2023",
       desc: "iSoftcare Technology is a Servie based Company. it provide the solution IT Solutions for Web and Mobile. Company based on Delhi."
     },
@@ -347,7 +347,7 @@ const bigProjects = {
       ]
     },
      {
-      image: require("./assets/images/logo/hotel-managment-system.png"),   //https://isoftcare.in/demo/hotel/index.php
+      image: require("./assets/images/logo/hotel-managment-system.png"),
       projectName: "Hotel Management System",
       projectDesc: "Hotel Management System built to automate reservations, check-in/out, and billing. It features a user-friendly interface for staff to manage room availability, guest information.",
       // descBullets: [

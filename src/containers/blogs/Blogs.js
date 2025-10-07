@@ -24,7 +24,8 @@ export default function Blogs() {
   useEffect(() => {
     if (blogSection.displayMediumBlogs === "true") {
       const getProfileData = () => {
-        fetch("/blogs.json")
+        const baseUrl = process.env.PUBLIC_URL || "";
+        fetch(`${baseUrl}/blogs.json`)
           .then(result => {
             if (result.ok) {
               return result.json();

@@ -1,4 +1,12 @@
 
+
+
+
+$ cd /var/www/html/Portfolio/developerFolio && npm i intersection-observer --save --no-audit --no-fund
+
+
+$ cd /var/www/html/Portfolio/developerFolio && npm run build
+
 https://github.com/saadpasta/developerFolio    portfolio
 
 ****RUN  the Project****
