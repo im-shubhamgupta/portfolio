@@ -249,7 +249,7 @@ const workExperiences = {
       href: "https://www.jharkhanditsolutions.com/",
       companylogo: require("./assets/images/logo/jis-web-logo.png"),
       date: "May 2022 - July 2022",
-      desc: "Jharkhand It Solutions is development Companies"
+      desc: "Jharkhand It Solutions is web & App development Company. which is on Ranchi"
     }
   ]
 };

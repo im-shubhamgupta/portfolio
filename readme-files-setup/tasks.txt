@@ -4,4 +4,104 @@ set images at all
 
 add more projects 
 
-first create structure in projects
+first create structure in projects That how it's worked in sequence
+
+
+
+Flow of Projects:
+
+    Call to public -> index.html
+
+Render Data by:
+    1. src / App.js
+    2. containers / Main.js         => call here every modules
+
+
+
+
+
+Technology stack used:
+    Core
+    React 16.10
+    create-react-app (react-scripts 5)
+    JavaScript (ES6+)
+    Sass/SCSS for styling
+    Animations and UI helpers
+    react-reveal (Fade animations)
+    lottie-react (Lottie animations)
+    react-headroom (sticky header behavior)
+    react-twitter-embed (Twitter timeline)
+    colorthief (extract colors from images)
+    Data and build utilities
+    Node https + dotenv in fetch.js to generate profile.json and blogs.json
+    gh-pages (optional GitHub Pages deployment)
+    Testing/dev tooling
+    enzyme, enzyme-adapter-react-16, react-test-renderer
+    prettier
+    PWA scaffolding
+    CRA service worker file present but not registered
+    Deployment
+    Static build served by any static server (e.g., npx serve -s build)
+    package.json.homepage controls asset base path (set to "." now)
+
+High-level flow diagram
+
+    [Browser Request / Home]
+            |
+            v
+    [Static Host serves build/]
+            |
+            v
+    [public/index.html]
+    - <div id="root">
+            |
+            v
+    [src/index.js]
+    - ReactDOM.render(<App />)
+            |
+            v
+    [src/App.js]
+    - <Main />
+            |
+            v
+    [src/containers/Main.js]
+    - Theme (StyleContext), Splash, Layout
+    - Section order:
+        Header
+        Greeting
+        Skills
+        SkillProgress
+        Education
+        WorkExperience
+        Projects
+        StartupProjects
+        Achievement
+        Blogs
+        Talks
+        Twitter
+        Podcast
+        Profile
+        Footer
+            |
+            v
+    [Sections read config from src/portfolio.js]
+    - e.g., workExperiences, openSource, bigProjects, blogSection, etc.
+
+
+
+Data generation and consumption:
+
+    [Build/Start step]
+    |
+    v
+    [fetch.js (Node, before CRA build/dev)]
+    - Reads env (.env)
+    - Fetches GitHub GraphQL -> writes public/profile.json
+    - Fetches Medium RSS (rss2json) -> writes public/blogs.json
+
+    [Runtime in browser]
+    |
+    v
+    - Projects.js    -> fetch(PUBLIC_URL + /profile.json) -> pinned repos
+    - Profile.js     -> fetch(PUBLIC_URL + /profile.json) -> user profile
+    - Blogs.js       -> fetch(PUBLIC_URL + /blogs.json)   -> medium posts
