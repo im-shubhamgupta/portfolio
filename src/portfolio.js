@@ -397,8 +397,8 @@ const achievementSection = {
     },
     {
       title: "Computing and Peripherals",
-      subtitle:
-        "Certified in Field Technician - Computing and Peripherals (NSQF Level-4), providing strong fundamentals in computer hardware, OS setup, and troubleshooting, which enhance my backend development and deployment skills",
+      subtitle: "Field Technician (NSQF4): hardware, OS setup, troubleshoot—boosts backend deployment, infra stability",
+        // "Certified in Field Technician - Computing and Peripherals (NSQF Level-4), providing strong fundamentals in computer hardware, OS setup, and troubleshooting, which enhance my backend development and deployment skills",
       image: require("./assets/images/logo/NSDC-logo.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
