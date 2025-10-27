@@ -1,11 +1,11 @@
 add Readmore in portfolio..    
-
-set images at all 
-
+fav icon
+set tally certificate
+set view button on footer
+set image on Contact
 add more projects 
 
 first create structure in projects That how it's worked in sequence
-
 
 
 Flow of Projects:
