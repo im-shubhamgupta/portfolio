@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="footer-div">
         <p className={isDark ? "footer-text" : "footer-text"}>
           
-          {emoji("Turning your Business ideas into Technology — with a powerful strategy & top-notch security.❤️")}
+          {emoji("Turning ideas into scalable products through clean architecture and secure engineering.")}          
         </p>
         {/* <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           Theme by{" "}
@@ -27,9 +27,9 @@ export default function Footer() {
     </Fade>
   );
 }
+//Turning your Business ideas into Technology — with a powerful strategy & top-notch security.❤️
+//{emoji("Turning your business ideas into innovative technology — with smart strategy, robust security, and seamless user experience. ❤️")}  
+// {emoji("Your business ideas. My technology. Strategy, security, and efficiency in every line of code. ❤️")}
 
- //       {emoji("Turning your business ideas into innovative technology — with smart strategy, robust security, and seamless user experience. ❤️")}  
-          // {emoji("Your business ideas. My technology. Strategy, security, and efficiency in every line of code. ❤️")}
-
-          // {emoji("Transforming ideas into technology solutions — with strategy, security, and user efficiency at the core. ❤️")}
-          // {emoji("Turning your ideas into code, one backend at a time. ❤️")}
+// {emoji("Transforming ideas into technology solutions — with strategy, security, and user efficiency at the core. ❤️")}
+// {emoji("Turning your ideas into code, one backend at a time. ❤️")}
