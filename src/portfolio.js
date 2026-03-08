@@ -415,7 +415,7 @@ const achievementSection = {
       image: require("./assets/images/logo/tally.png"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"},
+        {name: "Certification", url: "https://drive.google.com/file/d/1agUJNT0s36oeVfriW1uZ_uv9zcrQoHmf/view"},
         // {
         //   name: "Final Project",
         //   url: "https://pakistan-olx-1.firebaseapp.com/"
