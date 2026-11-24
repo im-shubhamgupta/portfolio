@@ -73,6 +73,14 @@ export default function Greeting() {
                 <Button text="View Projects" href="#projects" />
                 {greeting.resumeLink && (
                   <Button
+                    text="View Resume"
+                    href={greeting.resumeLink}
+                    newTab={true}
+                    variant="outline"
+                  />
+                )}
+                {greeting.resumeLink && (
+                  <Button
                     text="Download Resume"
                     href={toDriveDownloadUrl(greeting.resumeLink)}
                     newTab={true}
