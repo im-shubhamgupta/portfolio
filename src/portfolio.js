@@ -233,7 +233,7 @@ const bigProjects = {
       projectName: "Talentrack — AI-Powered Talent Marketplace",
       category: "AI · SaaS Marketplace",
       projectDesc:
-        "MECA (Media, Entertainment, Creative & Advertising) platform connecting brands with agencies, freelancers, and influencers. Built **AI features** end to end — **LLM-generated content**, **embedding-based semantic search**, and **AI talent matching** using **OpenAI, Claude, and Gemini** with **MariaDB vector search**.",
+        "Talent marketplace connecting brands with creators and agencies. I built **AI features** end to end — **LLM-generated content**, **embedding-based semantic search**, and **AI talent matching** using **OpenAI, Claude, and Gemini** with **MariaDB vector search**.",
       tags: [
         "Laravel",
         "OpenAI",
@@ -249,7 +249,7 @@ const bigProjects = {
       projectName: "Satvic Movement",
       category: "SaaS · Health & Wellness",
       projectDesc:
-        "Large community-driven wellness platform — contributed to backend services supporting content, user journeys, and growth at scale.",
+        "Backend for a large online wellness community. I worked on the Laravel services behind its content, user journeys, and third-party integrations, keeping the platform reliable as it grew.",
       tags: ["Laravel", "MySQL", "Integrations"],
       footerLink: [{name: "Visit Website", url: "https://satvicmovement.org/"}]
     },
@@ -258,7 +258,7 @@ const bigProjects = {
       projectName: "Bazaloni CRM",
       category: "SaaS · CRM",
       projectDesc:
-        "CRM for tea auction and trade operations across India — sales, purchase, and inventory workflows with role-based access.",
+        "Built the backend of a CRM that runs tea auction and trade operations across India — sales, purchase, and inventory workflows, with role-based access for each team.",
       tags: ["PHP", "MySQL", "Business Logic"],
       footerLink: [{name: "Visit Website", url: "http://www.bazaloni.com/"}]
     },
@@ -267,7 +267,7 @@ const bigProjects = {
       projectName: "Institute Management System",
       category: "SaaS · EdTech",
       projectDesc:
-        "End-to-end institute operations: admissions, fees, attendance, timetables, and reporting — reducing manual admin work.",
+        "Built a complete institute management system — admissions, fees, attendance, timetables, and reports — replacing manual paperwork for the admin team.",
       tags: ["Laravel", "MySQL", "Admin Panels"],
       footerLink: [{name: "Visit Website", url: "http://www.abhigya.in/"}]
     },
@@ -276,7 +276,7 @@ const bigProjects = {
       projectName: "PhindBooks",
       category: "E-commerce",
       projectDesc:
-        "Online and retail book platform (Dubai/UAE) with catalog, categories, and order-related backend flows.",
+        "Developed the e-commerce backend for a Dubai-based online and retail bookstore — product catalog, categories, and order flows.",
       tags: ["PHP", "MySQL", "E-commerce"],
       footerLink: [{name: "Visit Website", url: "https://phindbooks.ae/"}]
     },
@@ -285,7 +285,7 @@ const bigProjects = {
       projectName: "Hotel Management System",
       category: "Operations SaaS",
       projectDesc:
-        "Reservations, check-in/out, billing, and room inventory automation for hospitality operations.",
+        "Built a hotel management system that automates reservations, check-in/out, billing, and room inventory for hotel staff.",
       tags: ["PHP", "MySQL", "Workflows"],
       footerLink: [
         {
