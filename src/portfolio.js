@@ -62,7 +62,8 @@ const aboutSection = {
   aiTechnologies: [
     "LLM Applications",
     "Embeddings & Vector Search",
-    "RAG (Retrieval-Augmented Generation)",
+    // Hidden until the user is ready to show RAG again:
+    // "RAG (Retrieval-Augmented Generation)",
     "OpenAI, Claude & Gemini APIs",
     "MariaDB Vector Search",
     "Prompt Engineering",
@@ -79,7 +80,8 @@ const aboutSection = {
     "Authentication, webhooks & payment gateways",
     "Scalable architecture & system maintainability",
     "**LLM-powered features & AI integration** into existing products",
-    "**Embeddings, semantic search & RAG pipelines**",
+    // RAG hidden for now; restore: "**Embeddings, semantic search & RAG pipelines**",
+    "**Embeddings & semantic search**",
     "**AI-assisted development** & workflow automation"
   ]
 };
@@ -235,6 +237,7 @@ const bigProjects = {
       projectDesc:
         "Talent marketplace connecting brands with creators and agencies. I built **AI features** end to end — **LLM-generated content**, **embedding-based semantic search**, and **AI talent matching** using **OpenAI, Claude, and Gemini** with **MariaDB vector search**.",
       tags: [
+        "PHP",
         "Laravel",
         "OpenAI",
         "Claude",
@@ -247,10 +250,10 @@ const bigProjects = {
     {
       image: require("./assets/images/logo/satvic-logo.avif"),
       projectName: "Satvic Movement",
-      category: "SaaS · Health & Wellness",
+      category: "E-commerce · Health & Wellness",
       projectDesc:
-        "Backend for a large online wellness community. I worked on the Laravel services behind its content, user journeys, and third-party integrations, keeping the platform reliable as it grew.",
-      tags: ["Laravel", "MySQL", "Integrations"],
+        "E-commerce platform for a large online wellness community. I worked on its backend — Node.js microservices running on AWS Lambda and EC2, with DynamoDB and S3 for data and storage.",
+      tags: ["Node.js", "Microservices", "AWS Lambda", "EC2", "DynamoDB", "S3"],
       footerLink: [{name: "Visit Website", url: "https://satvicmovement.org/"}]
     },
     {
@@ -259,7 +262,7 @@ const bigProjects = {
       category: "SaaS · CRM",
       projectDesc:
         "Built the backend of a CRM that runs tea auction and trade operations across India — sales, purchase, and inventory workflows, with role-based access for each team.",
-      tags: ["PHP", "MySQL", "Business Logic"],
+      tags: ["PHP", "MySQL", "REST APIs", "RBAC"],
       footerLink: [{name: "Visit Website", url: "http://www.bazaloni.com/"}]
     },
     {
@@ -268,7 +271,14 @@ const bigProjects = {
       category: "SaaS · EdTech",
       projectDesc:
         "Built a complete institute management system — admissions, fees, attendance, timetables, and reports — replacing manual paperwork for the admin team.",
-      tags: ["Laravel", "MySQL", "Admin Panels"],
+      tags: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "Multi-tenant SaaS",
+        "RBAC",
+        "REST APIs"
+      ],
       footerLink: [{name: "Visit Website", url: "http://www.abhigya.in/"}]
     },
     {
@@ -307,7 +317,7 @@ const awardsSection = {
       title: "Trailblazer Award",
       issuer: "Talentrack",
       date: "March 2026",
-      image: `${PUBLIC}/shubham/trailblazer.jpeg`,
+      image: `${PUBLIC}/shubham/trailblazer.webp`,
       imageAlt: "Talentrack Trailblazer Award for Shubham Gupta, March 2026",
       description:
         "Recognised at Talentrack for continuous learning, improvement, teamwork, and contribution toward impactful and scalable solutions."

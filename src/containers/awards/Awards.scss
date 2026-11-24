@@ -101,9 +101,10 @@
     padding: 1.25rem;
   }
 
+  /* Source is 480px wide: stay at or below half that for sharp high-DPI phones */
   .award-image-link {
     width: 100%;
-    max-width: 260px;
+    max-width: 240px;
   }
 
   .award-detail {
