@@ -15,27 +15,28 @@
   gap: 1rem 1rem;
 }
 
-.project-card{
+.project-card {
   position: relative;
 }
 
 /* Media Query */
-@media (min-width: 1380px) {//abobe 1380
+@media (min-width: 1380px) {
+  //abobe 1380
   .project-card-footer {
-      position: absolute;
-      left: 0;
-      bottom: 16px;
-      width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    width: 100%;
   }
 }
 
 /* Media Query */
 @media (max-width: 1380px) {
   .project-card-footer {
-      position: absolute;
-      left: 0;
-      bottom: 16px;
-      width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    width: 100%;
   }
   .project-title {
     font-size: 40px;

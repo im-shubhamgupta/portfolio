@@ -1,0 +1,176 @@
+@import "../../_globalColor";
+
+.section-dark {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.about-summary-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: $titleColor;
+  margin: 0 0 1rem;
+}
+
+.about-summary {
+  margin-bottom: 2rem;
+}
+
+.about-paragraph {
+  color: $textColor;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0 0 1rem;
+}
+
+.dark-mode.about-paragraph,
+.dark-mode.about-summary-title,
+.dark-mode.about-block-title {
+  color: $textColorDark;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 1.25rem 1rem;
+  background: $lightBackground1;
+  border: 1px solid $lightBorder1;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  border-color: $accentBorder;
+}
+
+.stat-card-dark {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.stat-value {
+  display: block;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+  background: $accentGradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: $subTitle;
+  margin-top: 0.35rem;
+  line-height: 1.3;
+}
+
+.about-block {
+  margin-bottom: 2rem;
+}
+
+.about-block-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: $titleColor;
+  margin: 0 0 1rem;
+}
+
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-pill {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.4rem 0.85rem;
+  border-radius: 6px;
+  background: $accentSoft;
+  color: $accentPrimary;
+  border: 1px solid $accentBorder;
+}
+
+.tech-pill-dark {
+  background: rgba(37, 99, 235, 0.15);
+  color: #93c5fd;
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
+.expertise-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.expertise-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: $textColor;
+}
+
+.expertise-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: $accentPrimary;
+  font-weight: 700;
+}
+
+.dark-mode-text {
+  color: #cbd5e1 !important;
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .expertise-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .stat-card {
+    padding: 1rem 0.75rem;
+  }
+}
+
+/* AI & LLM block: violet accent to set it apart from core tech */
+.about-ai-block .about-block-title i {
+  color: $accentSecondary;
+}
+
+.ai-pill {
+  font-weight: 600;
+  background: rgba(124, 58, 237, 0.08);
+  color: $accentSecondary;
+  border-color: rgba(124, 58, 237, 0.25);
+}
+
+.ai-pill-dark {
+  background: rgba(124, 58, 237, 0.16);
+  color: #c4b5fd;
+  border-color: rgba(124, 58, 237, 0.35);
+}

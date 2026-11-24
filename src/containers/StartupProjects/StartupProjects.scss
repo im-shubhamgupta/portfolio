@@ -3,88 +3,133 @@
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  width: 120px;
+  object-fit: contain;
 }
+
 .card-title {
   color: $titleColor;
-  font-size: 22px;
-  line-height: 24px;
+  font-size: 1.05rem;
   font-weight: 700;
-  margin: 15px 0 0 0;
+  margin: 0.5rem 0;
+  text-align: left;
 }
+
 .card-subtitle {
   color: $cardSubtitle;
-  font-size: 17px;
-  line-height: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  text-align: left;
+  margin: 0;
 }
+
 .project-card {
   display: flex;
   flex-direction: column;
-  background-color: $lightBackground2;
-  padding: 1.5rem;
-  border-radius: 10px;
+  background: $lightBackground1;
+  padding: 1.25rem;
+  border-radius: 12px;
   border: 1px solid $lightBorder1;
-  // justify-content: center; //tmp comment
+  height: 100%;
+  text-align: left;
 }
+
 .project-card-light {
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-card-dark {
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card-light:hover,
+.project-card-dark:hover {
+  transform: translateY(-4px);
+  border-color: $accentBorder;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1);
+}
+
+.project-card-dark:hover {
+  border-color: rgba(96, 165, 250, 0.35);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
 .project-detail {
-  text-align: center;
-}
-.project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
-}
-.project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
-}
-.project-image {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-category {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $accentPrimary;
+}
+
+.project-image {
+  min-height: 80px;
+  display: flex;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
 }
 
-.project-card-footer span.project-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
-  vertical-align: middle;
-  align-items: center;
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.75rem 0;
+}
+
+.project-tech-tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 4px;
-  display: inline-flex;
-  font-size: 0.75rem;
-  height: 2em;
-  justify-content: center;
-  white-space: nowrap;
-  line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
-  cursor: pointer;
-  transition: 0.2s ease-in;
+  background: $accentSoft;
+  color: $accentPrimary;
+  border: 1px solid $accentBorder;
 }
 
-@media (max-width: 768px) {
-  .project-subtitle {
-    font-size: 16px;
-    text-align: center;
+.project-card-footer {
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.project-tag {
+  background: $buttonColor;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: inherit;
+  padding: 0.45rem 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.project-tag:hover {
+  background: $buttonHover;
+}
+
+.dark-mode .card-title {
+  color: $textColorDark;
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: 1fr;
   }
 }

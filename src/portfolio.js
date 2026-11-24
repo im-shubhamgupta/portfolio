@@ -1,238 +1,193 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
-
-
-// https://github.com/30047shivam?tab=repositories
-
-// https://portshivamfolio.vercel.app/#services
+/* Personal portfolio configuration — edit this file to update site content */
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
-// Splash Screen
+const PUBLIC = process.env.PUBLIC_URL || "";
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 1200
 };
-
-// Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false
 };
 
-//  "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
 const greeting = {
   username: "Shubham Gupta",
-  title: "Hi, I am Shubham Gupta",
-  subTitle: emoji(
-    "A passionate Backend Developer 🚀 specializing in Laravel, MySQL, DynamoDB, and Node.js, helping businesses achieve growth through secure and scalable web solutions."
-  ),
+  title: "Shubham Gupta",
+  roleTitle: "AI-Enabled Backend Engineer",
+  roleBadge: "Backend · SaaS · LLM Applications",
+  subTitle:
+    "4.5+ years building scalable APIs and SaaS backends with Laravel, Node.js, MySQL, and DynamoDB — now integrating **LLMs, embeddings, and AI-powered workflows** into production products.",
+  profileImage: `${PUBLIC}/shubham/sg-white-bg.png`,
+  email: "shubhamkumargupta8@gmail.com",
+  phone: "+91 7004083341",
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+  displayGreeting: true
 };
 
-// Social Media Links
+const aboutSection = {
+  display: true,
+  title: "About Me",
+  summaryTitle: "Professional Summary",
+  paragraphs: [
+    "**AI-Enabled Backend Engineer** with 4.5+ years of experience building scalable web and SaaS applications. Specialized in Laravel, PHP, Node.js, and API-driven systems with strong focus on clean architecture, performance, and secure integrations.",
+    "Experienced in marketplace platforms, CRM systems, e-commerce backends, and education SaaS — from database design to production deployment. Now bringing **AI** into the backend: integrating **LLM APIs**, building **embedding-based semantic search**, and using **AI-assisted development** to ship faster with better quality."
+  ],
+  stats: [
+    {value: "4.5+", label: "Years Experience"},
+    {value: "10+", label: "Products & Projects"},
+    {value: "7+", label: "Core Technologies"},
+    {value: "50+", label: "APIs Built"}
+  ],
+  coreTechnologies: [
+    "PHP",
+    "Laravel",
+    "JavaScript",
+    "Node.js",
+    "Express.js",
+    "MySQL",
+    "MariaDB",
+    "DynamoDB",
+    "REST APIs",
+    "AWS",
+    "Docker",
+    "Git"
+  ],
+  aiTitle: "AI & LLM Engineering",
+  aiTechnologies: [
+    "LLM Applications",
+    "Embeddings & Vector Search",
+    "RAG (Retrieval-Augmented Generation)",
+    "OpenAI, Claude & Gemini APIs",
+    "MariaDB Vector Search",
+    "Prompt Engineering",
+    "Structured Outputs & Function Calling",
+    "AI-Assisted Development",
+    "AI-Generated Docs & VAPT Reports"
+  ],
+  keyExpertise: [
+    "SaaS backend development & multi-tenant workflows",
+    "REST API design & third-party integrations",
+    "MySQL schema design & query optimization",
+    "DynamoDB & cloud-ready data modeling",
+    "Laravel & Node.js/Express microservices",
+    "Authentication, webhooks & payment gateways",
+    "Scalable architecture & system maintainability",
+    "**LLM-powered features & AI integration** into existing products",
+    "**Embeddings, semantic search & RAG pipelines**",
+    "**AI-assisted development** & workflow automation"
+  ]
+};
 
 const socialMediaLinks = {
   github: "https://github.com/im-shubhamgupta",
   linkedin: "https://www.linkedin.com/in/shubham-gupta-200761191",
   gmail: "shubhamkumargupta8@gmail.com",
-  // gitlab: "https://gitlab.com/",
-  // facebook: "https://www.facebook.com",
-  // medium: "https://medium.com/",
-  // stackoverflow: "https://stackoverflow.com/,
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  display: true
 };
-
-// Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "Backend DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Technical Expertise",
+  subTitle: "AI-ENABLED BACKEND ENGINEERING · SAAS · LLM APPLICATIONS",
   skills: [
     emoji(
-      "⚡ Develop a Robust and Scalable Web Applications with a Best User Experience"
+      "Design and ship scalable REST APIs, background jobs, and domain-driven backend modules"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Razorpay Payment Gateway"
+      "Build and maintain SaaS products — auth, billing hooks, admin workflows, and integrations"
+    ),
+    emoji(
+      "Model data in MySQL and DynamoDB with performance, consistency, and migration discipline"
+    ),
+    emoji(
+      "Integrate LLMs, embeddings, and RAG into backend services for smarter product capabilities"
     )
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "Mysql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    {skillName: "Laravel", fontAwesomeClassname: "fab fa-laravel"},
+    {skillName: "PHP", fontAwesomeClassname: "fab fa-php"},
+    {skillName: "JavaScript", fontAwesomeClassname: "fab fa-js"},
+    {skillName: "Node.js", fontAwesomeClassname: "fab fa-node"},
+    {skillName: "Express", fontAwesomeClassname: "fas fa-server"},
+    {skillName: "MySQL", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "DynamoDB", fontAwesomeClassname: "fab fa-aws"},
+    {skillName: "Git", fontAwesomeClassname: "fab fa-git-alt"},
+    {skillName: "Docker", fontAwesomeClassname: "fab fa-docker"},
+    {skillName: "AWS", fontAwesomeClassname: "fab fa-aws"}
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false
 };
 
-// Education Section
-
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Nielit University",
+      schoolName: "NIELIT",
       logo: require("./assets/images/logo/nielit-logo.webp"),
-      subHeader: "O Level Foundation Course in Information Technology",
-      duration: "2021 - 2022",
-      desc: "Completed my O Level Foundation Course in Information Technology with 71% marks. I have done my O Level from Nielit University, Bokaro, Jharkhand.",
-      // descBullets: ["Lorem ipsum dolor sit amet, consectetur ad  ipiscing elit"]
+      subHeader: "O Level — Information Technology",
+      duration: "2021 – 2022",
+      desc: "Foundation in IT with 71% — strengthened fundamentals in computing and software concepts."
     },
     {
       schoolName: "Vinoba Bhave University",
       logo: require("./assets/images/logo/vbu-logo.png"),
-      subHeader: "Bachelor's Degree",
-      duration: "April 2014 - August 2017",
-      desc: "Completed my Bachelor's Degree with 69% marks. I have done my Bachelors in Commerce from Vinoba Bhave University, Hazaribagh, Jharkhand.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
-    },
-    {
-      schoolName: "Higher Secondry Education (12th)",
-      logo: require("./assets/images/logo/jac-logo.webp"),
-      subHeader: "Jharkhand Academic Council",
-      duration: "April 2012 - April 2014",
-      desc: "Complete my Higher Secondary Education with 58.4% marks.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
-    },
-    {
-      schoolName: "Secondry Education (10th)",
-      logo: require("./assets/images/logo/jac-logo.webp"),
-      subHeader: "Jharkhand Academic Council",
-      duration: "April 2012",
-      desc: "Complete my Secondary Education with 62.6% marks.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
-    },
-    
+      subHeader: "Bachelor's Degree (Commerce)",
+      duration: "2014 – 2017",
+      desc: "Bachelor's in Commerce with 69% from Hazaribagh, Jharkhand."
+    }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-/*Proficiencies:
-- Languages: PHP (Advanced), JavaScript (Proficient), Python (Intermediate)
-- Frameworks: Laravel (Advanced), CodeIgniter (Proficient)
-- Databases: MySQL (Advanced), DynamoDB (Intermediate)
-- Tools: Git, Postman, Composer*/
 const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
+  viewSkillBars: false,
+  title: "Core Proficiency",
   experience: [
-    // {
-    //   Stack: "Frontend/Design", //Insert stack or technology you have experience in
-    //   progressPercentage: "90%" //Insert relative proficiency in percentage
-    // },
-    {
-      Stack: "Backend Developer",
-      progressPercentage: "100%"
-    },
-    {
-      Stack: "Laravel Framework",
-      progressPercentage: "100%"
-    },
-    {
-      Stack: "Node.js, Expess.js",
-      progressPercentage: "80%"
-    },
-    // {
-    //   Stack: "React.js",
-    //   progressPercentage: "80%"
-    // },
-    {
-      Stack: "HTML/CSS Javascript",
-      progressPercentage: "100%"
-    },
-    {
-      Stack: "MySQL, DynamoDB, MongoDB",
-      progressPercentage: "80%"
-    }
-
+    {Stack: "Laravel / PHP", progressPercentage: "95%"},
+    {Stack: "Node.js / Express.js", progressPercentage: "85%"},
+    {Stack: "MySQL", progressPercentage: "90%"},
+    {Stack: "DynamoDB", progressPercentage: "75%"},
+    {Stack: "API Design & System Architecture", progressPercentage: "88%"},
+    {Stack: "LLM Applications & AI Integration", progressPercentage: "75%"}
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
-// Work experience section
-
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
+  title: "Experience",
+  subtitle:
+    "Building backend systems and SaaS features for product teams across industries.",
   experience: [
     {
-      role: "PHP Developer",
+      role: "PHP Developer (AI-Enabled Backend)",
       company: "Talentrack",
       companylogo: require("./assets/images/logo/talentrack-logo.avif"),
       href: "https://talentrack.in",
-      date: "Febraury 2025 - Present",
-      desc: "Talentrack.in is India's leading online platform and content marketplace for the Media, Entertainment, and Creative (MECA) industries. It connects businesses with a wide range of creative professionals, including agencies, freelancers, and influencers, to help them create high-quality content for their brands.",
+      date: "February 2025 – Present",
+      desc: "**AI-focused** backend development for India's leading MECA (Media, Entertainment, Creative & Advertising) marketplace connecting brands with agencies, freelancers, and creators.",
       descBullets: [
-        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Built **LLM-powered content features** using **OpenAI, Claude, and Gemini APIs**",
+        "Implemented **embedding-based semantic search** with **MariaDB vector storage**",
+        "Developed **AI matching and recommendations** connecting brands with the right talent",
+        "Ship features faster using **AI-assisted development**, alongside Laravel APIs for core marketplace workflows"
       ]
     },
     {
       role: "Software Developer",
-      company: "Rjs Tech Solutions",
+      company: "RJS Tech Solutions",
       href: "https://rjs.in/",
       companylogo: require("./assets/images/logo/rjs-logo3.jpg"),
-      date: "July 2023 - January 2025",
-      desc: "RJS is a leading game and app development company based out of Kolkata, India. Our products are available across all major mobile and web platforms.",
+      date: "July 2023 – January 2025",
+      desc: "Full-cycle backend work on mobile and web products for a Kolkata-based product studio.",
       descBullets: [
-        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Built REST APIs and admin backends supporting games and consumer apps",
+        "Integrated third-party services and optimized MySQL-backed features",
+        "Delivered production fixes and feature releases in agile sprints"
       ]
     },
     {
@@ -240,278 +195,202 @@ const workExperiences = {
       company: "iSoftcare Technology",
       href: "https://isoftcare.com/",
       companylogo: require("./assets/images/logo/isoft-logo.png"),
-      date: "August 2022 - June 2023",
-      desc: "iSoftcare Technology is a Servie based Company. it provide the solution IT Solutions for Web and Mobile. Company based on Delhi."
+      date: "August 2022 – June 2023",
+      desc: "Delivered custom web solutions for client products across domains.",
+      descBullets: [
+        "Implemented Laravel/PHP modules for client SaaS and internal tools",
+        "Designed database schemas and CRUD flows for business operations",
+        "Supported deployments and post-release maintenance"
+      ]
     },
     {
-      role: "Php Developer (Intern)",
-      company: "Jharkhand It Solutions",
+      role: "PHP Developer (Intern)",
+      company: "Jharkhand IT Solutions",
       href: "https://www.jharkhanditsolutions.com/",
       companylogo: require("./assets/images/logo/jis-web-logo.png"),
-      date: "May 2022 - July 2022",
-      desc: "Jharkhand It Solutions is web & App development Company. which is on Ranchi"
+      date: "May 2022 – July 2022",
+      desc: "Web development internship building foundational backend and CMS features.",
+      descBullets: [
+        "Contributed to PHP/Laravel features for client websites",
+        "Learned production practices: Git, code review, and bug fixing"
+      ]
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: false
 };
 
-// Some big projects you have worked on
-
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "Projects Where I Contributed to Achieving Business Success",//SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Featured Projects",
+  subtitle:
+    "SaaS and product platforms where I contributed backend architecture, APIs, and scalable delivery.",
   projects: [
     {
       image: require("./assets/images/logo/talentrack-logo.avif"),
-      projectName: "Content Marketplace",
-      projectDesc: "Find Agencies, Freelancers, and Influencers to create contents for your brand.",
-      //      projectDesc: "This is a health and wellness platform that promotes a plant-based lifestyle.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://talentrack.in/"
-        //  you can add extra buttons here.
-        }
-      ]
+      projectName: "Talentrack — AI-Powered Talent Marketplace",
+      category: "AI · SaaS Marketplace",
+      projectDesc:
+        "MECA (Media, Entertainment, Creative & Advertising) platform connecting brands with agencies, freelancers, and influencers. Built **AI features** end to end — **LLM-generated content**, **embedding-based semantic search**, and **AI talent matching** using **OpenAI, Claude, and Gemini** with **MariaDB vector search**.",
+      tags: [
+        "Laravel",
+        "OpenAI",
+        "Claude",
+        "Gemini",
+        "Embeddings",
+        "MariaDB Vector"
+      ],
+      footerLink: [{name: "Visit Website", url: "https://talentrack.in/"}]
     },
     {
       image: require("./assets/images/logo/satvic-logo.avif"),
       projectName: "Satvic Movement",
-      projectDesc: "Satvic Movement is India's largest community driven health revolution helping you reach the peak of your physical, mental, and spiritual well-being.",
-      //      projectDesc: "This is a health and wellness platform that promotes a plant-based lifestyle.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://satvicmovement.org/"
-        }
-        //  you can add extra buttons here.
-      ]
+      category: "SaaS · Health & Wellness",
+      projectDesc:
+        "Large community-driven wellness platform — contributed to backend services supporting content, user journeys, and growth at scale.",
+      tags: ["Laravel", "MySQL", "Integrations"],
+      footerLink: [{name: "Visit Website", url: "https://satvicmovement.org/"}]
     },
     {
       image: require("./assets/images/logo/bazaloni.png"),
-      projectName: "Bazaloni",
-      projectDesc: "Bazaloni is CRM Software for Maintaining selling and purchase with Auction Tea leafs in all over india",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://www.bazaloni.com/"
-        }
-      ]
+      projectName: "Bazaloni CRM",
+      category: "SaaS · CRM",
+      projectDesc:
+        "CRM for tea auction and trade operations across India — sales, purchase, and inventory workflows with role-based access.",
+      tags: ["PHP", "MySQL", "Business Logic"],
+      footerLink: [{name: "Visit Website", url: "http://www.bazaloni.com/"}]
     },
     {
       image: require("./assets/images/logo/abhigya-logo.png"),
-      projectName: "Institute Management Software",
-      projectDesc: "Institute Management Software to streamline operations including admissions, student records, fee collection, timetable scheduling, attendance tracking, and communication modules; improved administrative efficiency by automating manual processes and enabling real-time access to academic and financial data.",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://www.abhigya.in/"
-        }
-      ]
+      projectName: "Institute Management System",
+      category: "SaaS · EdTech",
+      projectDesc:
+        "End-to-end institute operations: admissions, fees, attendance, timetables, and reporting — reducing manual admin work.",
+      tags: ["Laravel", "MySQL", "Admin Panels"],
+      footerLink: [{name: "Visit Website", url: "http://www.abhigya.in/"}]
     },
     {
-      image: require("./assets/images/logo/harrison-logo.png"),
-      projectName: "Harrison",
-      projectDesc: "Harrison is a CRM Software for Maintaining selling and purchase with of his own products in all over india",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ],
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://www.harrisonlocks.com/"
-        }
-      ]
-    },
-     {
       image: require("./assets/images/logo/phindbooks-logo.png"),
       projectName: "PhindBooks",
-      projectDesc: " Phindbook is an online book retailer and physical store based in Dubai, UAE, specializing in a wide range of books, including children's books, self-help, business, young adult, manga, and academic (CBSE and UK school) books. ",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ],
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://phindbooks.ae/"
-        }
-      ]
+      category: "E-commerce",
+      projectDesc:
+        "Online and retail book platform (Dubai/UAE) with catalog, categories, and order-related backend flows.",
+      tags: ["PHP", "MySQL", "E-commerce"],
+      footerLink: [{name: "Visit Website", url: "https://phindbooks.ae/"}]
     },
-     {
+    {
       image: require("./assets/images/logo/hotel-managment-system.png"),
       projectName: "Hotel Management System",
-      projectDesc: "Hotel Management System built to automate reservations, check-in/out, and billing. It features a user-friendly interface for staff to manage room availability, guest information.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ],
+      category: "Operations SaaS",
+      projectDesc:
+        "Reservations, check-in/out, billing, and room inventory automation for hospitality operations.",
+      tags: ["PHP", "MySQL", "Workflows"],
       footerLink: [
         {
-          name: "Visit Website",
+          name: "View Demo",
           url: "https://isoftcare.in/demo/hotel/index.php"
         }
       ]
-    },
+    }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
-
-// Achievement Section
-// Include certificates, talks etc
 
 const achievementSection = {
   title: emoji("Certifications"),
-  subtitle:
-    "Certifications that I have done !",
-
+  subtitle: "Professional credentials and continuous learning.",
   achievementsCards: [
     {
-      title: "C++ Programming",//"First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      subtitle:"Certified in C++ programming with strong knowledge of object-oriented concepts, data structures, and algorithmic problem solving.",
-      image: require("./assets/images/logo/cpp-logo.png"),
-      imageAlt: "Google Code-In Logo",
+      title: "be10X AI Tools Workshop",
+      subtitle:
+        "Hands-on **AI training** (Jan 2026) — using **ChatGPT and AI tools** to code and debug faster, analyse data, and speed up everyday engineering workflows.",
+      image: `${PUBLIC}/shubham/b10x.png`,
+      imageAlt: "be10X AI Tools Workshop Certificate",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/1PnA_4ygfnKEwjXEdWLBGvydi3okt6SIG/view"
-        },
-        //   I have Complete my C++ Programmin Languge with a best Institute with efforts and learned great things and certified from West Bengal Government",
-        /*{
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }*/
-      ]
-    },
-    {
-      title: "Computing and Peripherals",
-      subtitle: "Field Technician (NSQF4): hardware, OS setup, troubleshoot—boosts backend deployment, infra stability",
-        // "Certified in Field Technician - Computing and Peripherals (NSQF Level-4), providing strong fundamentals in computer hardware, OS setup, and troubleshooting, which enhance my backend development and deployment skills",
-      image: require("./assets/images/logo/NSDC-logo.png"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/1mKaie8wMDTnlrcgh_-jZaf7KFBWD0ZNu/view"
+          name: "View Certificate",
+          url: `${PUBLIC}/shubham/b10x.png`
         }
       ]
     },
-
     {
-      title: "Tally Accounting",
-      subtitle: "Certified in Tally Accounting with strong understanding of bookkeeping, GST, payroll, and financial reporting.",
-      image: require("./assets/images/logo/tally.png"),
-      imageAlt: "PWA Logo",
+      title: "Multi-Cloud DevOps",
+      subtitle:
+        "Cloud fundamentals, DevOps practices, and deployment workflows across modern infrastructure.",
+      image: `${PUBLIC}/shubham/multi-cloud-devops.png`,
+      imageAlt: "Multi-Cloud DevOps Certificate",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1agUJNT0s36oeVfriW1uZ_uv9zcrQoHmf/view"},
-        // {
-        //   name: "Final Project",
-        //   url: "https://pakistan-olx-1.firebaseapp.com/"
-        // }
+        {
+          name: "View Certificate",
+          url: `${PUBLIC}/shubham/multi-cloud-devops.png`
+        }
+      ]
+    },
+    {
+      title: "C++ Programming",
+      subtitle:
+        "Hindustan Infotech Computer Training Centre — object-oriented programming and core CS fundamentals. Scored 87% (Grade A).",
+      image: require("./assets/images/logo/cpp-logo.png"),
+      imageAlt: "C++ Programming Certificate",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1PnA_4ygfnKEwjXEdWLBGvydi3okt6SIG/view"
+        }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
-
-// Blogs Section
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
+  subtitle: "Insights on backend engineering, SaaS, and emerging AI workflows.",
+  displayMediumBlogs: "false",
+  blogs: [],
   display: false
 };
 
-// Resume Section
-const resumeSection = {
-//   title: "Resume",
-//   subtitle: "Feel free to download my resume",
+const talkSection = {
+  title: "TALKS",
+  subtitle: emoji("Speaking and community contributions."),
+  talks: [],
+  display: false
+};
 
-//   // Please Provide with Your Podcast embeded Link
-//   display: false // Set false to hide this section, defaults to true
+const podcastSection = {
+  title: emoji("Podcast"),
+  subtitle: "",
+  podcast: [],
+  display: false
+};
+
+const resumeSection = {
+  display: false
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  href: "https://api.whatsapp.com/send?phone=7004083341&amp;text=Hi%20Shubham",
+  title: emoji("Let's Connect"),
+  href: "https://api.whatsapp.com/send?phone=7004083341&text=Hi%20Shubham",
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Open to **AI-enabled backend** roles at product companies. Let's discuss architecture, SaaS, or **LLM-powered** products.",
   number: "+91 7004083341",
   email_address: "shubhamkumargupta8@gmail.com"
-};//
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const twitterDetails = {
+  userName: "twitter",
+  display: false
+};
+
+const isHireable = true;
 
 export {
   illustration,
   greeting,
+  aboutSection,
   socialMediaLinks,
   splashScreen,
   skillsSection,

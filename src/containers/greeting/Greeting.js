@@ -1,69 +1,105 @@
 import React, {useContext} from "react";
 import {Fade} from "react-reveal";
-import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import {greeting, socialMediaLinks, isHireable} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import {renderBold} from "../../utils";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
+
   if (!greeting.displayGreeting) {
     return null;
   }
+
   return (
-    <Fade bottom duration={1000} distance="40px">
-      <div className="greet-main" id="greeting">
-        <div className="greeting-main">
-          <div className="greeting-text-div">
-            <div>
-              <h1
-                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
-              >
-                {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
+    <section
+      className={`hero-section ${isDark ? "hero-dark" : ""}`}
+      id="greeting"
+    >
+      <Fade bottom duration={700} distance="20px">
+        <div className="page-container hero-inner">
+          <div className="hero-grid">
+            <div className="hero-content">
+              {isHireable && (
+                <span className="hero-badge">
+                  <span className="hero-badge-dot" aria-hidden="true" />
+                  Open to new opportunities
+                </span>
+              )}
+              <p className="hero-role">{greeting.roleTitle}</p>
+              <h1 className={isDark ? "dark-mode hero-name" : "hero-name"}>
+                Hi, I'm{" "}
+                <span className="hero-name-accent">{greeting.title}</span>
               </h1>
               <p
                 className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
+                  isDark ? "dark-mode hero-tagline" : "hero-tagline subTitle"
                 }
               >
-                {greeting.subTitle}
+                {renderBold(greeting.subTitle)}
               </p>
-              <div id="resume" className="empty-div"></div>
-              <SocialMedia />
-              <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
+
+              <div className="hero-contact-row">
+                {greeting.email && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
-                    className="download-link-button"
+                    href={`mailto:${greeting.email}`}
+                    className="hero-contact-link"
                   >
-                    {/* <Button text="Download my resume" /> */}
+                    <i className="fas fa-envelope" aria-hidden="true" />
+                    {greeting.email}
+                  </a>
+                )}
+                {greeting.phone && (
+                  <a
+                    href={`tel:${greeting.phone.replace(/\s/g, "")}`}
+                    className="hero-contact-link"
+                  >
+                    <i className="fas fa-phone-alt" aria-hidden="true" />
+                    {greeting.phone}
                   </a>
                 )}
               </div>
+
+              {socialMediaLinks.display && (
+                <div className="hero-social">
+                  <SocialMedia />
+                </div>
+              )}
+
+              <div className="hero-actions">
+                <Button text="View Projects" href="#projects" />
+                {greeting.resumeLink && (
+                  <Button
+                    text="Resume"
+                    href={greeting.resumeLink}
+                    newTab={true}
+                    variant="outline"
+                  />
+                )}
+              </div>
+            </div>
+
+            <div className="hero-visual">
+              {greeting.profileImage && (
+                <div className="profile-image-frame">
+                  <img
+                    src={greeting.profileImage}
+                    alt={greeting.username}
+                    className="profile-image"
+                  />
+                </div>
+              )}
             </div>
           </div>
-          <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
-          </div>
+
+          <a href="#about" className="hero-scroll" aria-label="Scroll to about">
+            <i className="fas fa-chevron-down" aria-hidden="true" />
+          </a>
         </div>
-      </div>
-    </Fade>
+      </Fade>
+    </section>
   );
 }

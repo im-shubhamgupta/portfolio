@@ -7,67 +7,59 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function WorkExperience() {
   const {isDark} = useContext(StyleContext);
-  const isReducedMotion = typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (workExperiences.display) {
-    return (
-      <div id="experience">
-        {isReducedMotion ? (
-          <>
-            <div className="experience-container hello" id="workExperience">
-              <div>
-                <h1 className="experience-heading">Experiences</h1>
-                <div className="experience-cards-div">
-                  {workExperiences.experience.map((card, i) => {
-                    return (
-                      <ExperienceCard
-                        key={i}
-                        isDark={isDark}
-                        cardInfo={{
-                          company: card.company,
-                          href: card.href,
-                          desc: card.desc,
-                          date: card.date,
-                          companylogo: card.companylogo,
-                          role: card.role,
-                          descBullets: card.descBullets
-                        }}
-                      />
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </>
-        ) : (
-        <Fade bottom duration={1000} distance="20px">
-          <div className="experience-container hello" id="workExperience">
-            <div>
-              <h1 className="experience-heading">Experiences</h1>
-              <div className="experience-cards-div">
-                {workExperiences.experience.map((card, i) => {
-                  return (
-                    <ExperienceCard
-                      key={i}
-                      isDark={isDark}
-                      cardInfo={{
-                        company: card.company,
-                        href: card.href,
-                        desc: card.desc,
-                        date: card.date,
-                        companylogo: card.companylogo,
-                        role: card.role,
-                        descBullets: card.descBullets
-                      }}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </Fade>
-        )}
-      </div>
-    );
+
+  if (!workExperiences.display) {
+    return null;
   }
-  return null;
+
+  const content = (
+    <section className="section" id="experience">
+      <div className="page-container">
+        <div className="section-header">
+          <h2 className={isDark ? "dark-mode section-heading" : "section-heading"}>
+            {workExperiences.title || "Experience"}
+          </h2>
+          {workExperiences.subtitle && (
+            <p
+              className={
+                isDark
+                  ? "dark-mode section-subtitle"
+                  : "section-subtitle subTitle"
+              }
+            >
+              {workExperiences.subtitle}
+            </p>
+          )}
+        </div>
+        <div className="experience-timeline">
+          {workExperiences.experience.map((card, i) => (
+            <ExperienceCard
+              key={i}
+              isDark={isDark}
+              cardInfo={{
+                company: card.company,
+                href: card.href,
+                desc: card.desc,
+                date: card.date,
+                companylogo: card.companylogo,
+                role: card.role,
+                descBullets: card.descBullets
+              }}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+
+  const isReducedMotion =
+    typeof window !== "undefined" &&
+    window.matchMedia &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (isReducedMotion) {
+    return content;
+  }
+
+  return <Fade bottom duration={600} distance="16px">{content}</Fade>;
 }

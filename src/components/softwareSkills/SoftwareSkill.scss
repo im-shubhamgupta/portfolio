@@ -3,29 +3,46 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
 }
 
 .software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  min-width: 4.5rem;
 }
 
 .software-skill-inline > i {
   color: $subTitle;
+  transition: color 0.2s ease;
 }
 
-.software-skill-inline > i:hover {
+.software-skill-inline:hover > i {
   color: $skillsColor;
 }
+
 .software-skill-inline > p {
   color: $subTitle;
-  font-size: 10px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin: 0.35rem 0 0;
+  text-align: center;
 }
-.software-skill-inline > i:hover ~ p {
+
+.software-skill-inline:hover > p {
   color: $skillsColor;
+}
+
+@media (max-width: 768px) {
+  .dev-icons {
+    justify-content: center;
+    text-align: center;
+  }
 }

@@ -1,64 +1,33 @@
 @import "../../_globalColor";
 
 .skills-main-div {
-  display: flex;
+  display: block;
   width: 100%;
-  overflow: hidden;
 }
 
 .skills-text-div {
-  margin-left: 50px;
+  text-align: left;
 }
 
-.skills-main-div > * {
-  flex: 1;
-  margin-bottom: 30px;
+.skills-text-subtitle {
+  text-transform: none;
+  letter-spacing: 0.02em;
 }
 
-.skills-image-div > img {
-  max-width: 100%;
-  height: auto;
+.skills-list {
+  margin-top: 1rem;
 }
 
-.skills-heading {
-  font-size: 56px;
-  font-weight: 400;
-}
-.subTitle {
-  color: $subTitle;
+.skills-text {
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0.5rem 0;
+  text-align: left;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  .skills-heading {
-    font-size: 40px;
-  }
-}
 @media (max-width: 768px) {
-  .skills-heading {
-    font-size: 30px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
-  .skills-main-div {
-    flex-direction: column;
-  }
-  .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
-  }
+  .skills-text-subtitle,
   .skills-text {
-    font-size: 16px;
-  }
-  .skills-text-subtitle {
-    font-size: 16px;
     text-align: center;
-  }
-  .skills-image-div {
-    /* display: none; */
-    order: 2;
   }
 }

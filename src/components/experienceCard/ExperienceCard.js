@@ -1,86 +1,60 @@
-import React, {useState, createRef} from "react";
+import React from "react";
 import "./ExperienceCard.scss";
-import ColorThief from "colorthief";
+import {renderBold} from "../../utils";
 
 export default function ExperienceCard({cardInfo, isDark}) {
-  const [colorArrays, setColorArrays] = useState([]);
-  const imgRef = createRef();
-
-  function getColorArrays() {
-    const colorThief = new ColorThief();
-    setColorArrays(colorThief.getColor(imgRef.current));
-  }
-
-  function rgb(values) {
-    return typeof values === "undefined"
-      ? null
-      : "rgb(" + values.join(", ") + ")";
-  }
-
-  const GetDescBullets = ({descBullets, isDark}) => {
-    return descBullets
-      ? descBullets.map((item, i) => (
-          <li
-            key={i}
-            className={isDark ? "subTitle dark-mode-text" : "subTitle"}
-          >
-            {item}
-          </li>
-        ))
-      : null;
+  const GetDescBullets = ({descBullets}) => {
+    if (!descBullets || !descBullets.length) {
+      return null;
+    }
+    return (
+      <ul className="experience-bullets">
+        {descBullets.map((item, i) => (
+          <li key={i}>{renderBold(item)}</li>
+        ))}
+      </ul>
+    );
   };
 
   return (
-    <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
-        <div className="experience-blurred_div"></div>
-        <a href={cardInfo.href} target="_blank" rel="noopener noreferrer">
-        <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
+    <article
+      className={
+        isDark ? "experience-timeline-item dark" : "experience-timeline-item"
+      }
+    >
+      <div className="experience-timeline-marker" aria-hidden="true" />
+      <div className="experience-timeline-body">
+        <div className="experience-timeline-header">
+          {cardInfo.companylogo && (
+            <img
+              src={cardInfo.companylogo}
+              alt=""
+              className="experience-company-logo"
+            />
+          )}
+          <div className="experience-timeline-meta">
+            <h3 className="experience-company-name">
+              {cardInfo.href ? (
+                <a
+                  href={cardInfo.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {cardInfo.company}
+                </a>
+              ) : (
+                cardInfo.company
+              )}
+            </h3>
+            <p className="experience-role-name">{cardInfo.role}</p>
+            <p className="experience-date">{cardInfo.date}</p>
+          </div>
         </div>
-        
-          <img
-            crossOrigin={"anonymous"}
-            ref={imgRef}
-            className="experience-roundedimg"
-            src={cardInfo.companylogo}
-            alt={cardInfo.company}
-            onLoad={() => getColorArrays()}
-          />
-        </a>
+        {cardInfo.desc && (
+          <p className="experience-desc">{renderBold(cardInfo.desc)}</p>
+        )}
+        <GetDescBullets descBullets={cardInfo.descBullets} />
       </div>
-      <div className="experience-text-details">
-        <h5
-          className={
-            isDark
-              ? "experience-text-role dark-mode-text"
-              : "experience-text-role"
-          }
-        >
-          {cardInfo.role}
-        </h5>
-        <h5
-          className={
-            isDark
-              ? "experience-text-date dark-mode-text"
-              : "experience-text-date"
-          }
-        >
-          {cardInfo.date}
-        </h5>
-        <p
-          className={
-            isDark
-              ? "subTitle experience-text-desc dark-mode-text"
-              : "subTitle experience-text-desc"
-          }
-        >
-          {cardInfo.desc}
-        </p>
-        <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
-      </div>
-    </div>
+    </article>
   );
 }
