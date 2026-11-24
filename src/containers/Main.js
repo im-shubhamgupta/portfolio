@@ -4,6 +4,7 @@ import Greeting from "./greeting/Greeting";
 import About from "./about/About";
 import WorkExperience from "./workExperience/WorkExperience";
 import StartupProject from "./StartupProjects/StartupProject";
+import Awards from "./awards/Awards";
 import Achievement from "./achievement/Achievement";
 import Education from "./education/Education";
 import Footer from "../components/footer/Footer";
@@ -50,6 +51,7 @@ const Main = () => {
             <About />
             <WorkExperience />
             <StartupProject />
+            <Awards />
             <Achievement />
             <Education />
             <Profile />

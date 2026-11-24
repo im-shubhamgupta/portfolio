@@ -9,6 +9,7 @@ import {
   workExperiences,
   bigProjects,
   achievementSection,
+  awardsSection,
   educationInfo
 } from "../../portfolio";
 
@@ -19,6 +20,7 @@ function Header() {
     aboutSection.display && {href: "#about", label: "About"},
     workExperiences.display && {href: "#experience", label: "Experience"},
     bigProjects.display && {href: "#projects", label: "Projects"},
+    awardsSection.display && {href: "#awards", label: "Awards"},
     achievementSection.display && {href: "#achievements", label: "Certs"},
     educationInfo.display && {href: "#education", label: "Education"},
     {href: "#contact", label: "Contact"}
@@ -29,9 +31,7 @@ function Header() {
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="#greeting" className="logo">
           <span className="grey-color">&lt;</span>
-          <span className="logo-name">
-            {greeting.username.split(" ")[0]}
-          </span>
+          <span className="logo-name">{greeting.username.split(" ")[0]}</span>
           <span className="grey-color">/&gt;</span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />

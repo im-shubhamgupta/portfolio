@@ -26,7 +26,7 @@ const greeting = {
   email: "shubhamkumargupta8@gmail.com",
   phone: "+91 7004083341",
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+    "https://drive.google.com/file/d/15o9svmAaw9BnVUJ3Q5cZFMlbuQ6QAqLk/view?usp=sharing",
   displayGreeting: true
 };
 
@@ -298,6 +298,23 @@ const bigProjects = {
   display: true
 };
 
+const awardsSection = {
+  display: true,
+  title: "Awards & Recognition",
+  subtitle: "Recognition for impact, ownership, and teamwork.",
+  awards: [
+    {
+      title: "Trailblazer Award",
+      issuer: "Talentrack",
+      date: "March 2026",
+      image: `${PUBLIC}/shubham/trailblazer.jpeg`,
+      imageAlt: "Talentrack Trailblazer Award for Shubham Gupta, March 2026",
+      description:
+        "Recognised at Talentrack for continuous learning, improvement, teamwork, and contribution toward impactful and scalable solutions."
+    }
+  ]
+};
+
 const achievementSection = {
   title: emoji("Certifications"),
   subtitle: "Professional credentials and continuous learning.",
@@ -404,6 +421,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  awardsSection,
   blogSection,
   talkSection,
   podcastSection,
