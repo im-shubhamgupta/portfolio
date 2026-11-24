@@ -5,6 +5,7 @@ env:
   REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
   USE_GITHUB_DATA: "true"
   MEDIUM_USERNAME: "saadpasta" # Change this to your medium username
+  REACT_APP_WEB3FORMS_ACCESS_KEY: ${{ secrets.WEB3FORMS_ACCESS_KEY }} # Add in repo Settings → Secrets → Actions
 on:
   workflow_dispatch:
   push:

@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
+import ContactForm from "../../components/contactForm/ContactForm";
 import {contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
@@ -62,6 +63,13 @@ export default function Contact() {
               </a>
             )}
           </div>
+
+          <ContactForm
+            isDark={isDark}
+            fallbackEmail={contactInfo.email_address}
+            title={contactInfo.formTitle}
+            subtitle={contactInfo.formSubtitle}
+          />
 
           <div className="contact-social">
             <SocialMedia />

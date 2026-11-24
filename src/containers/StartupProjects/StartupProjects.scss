@@ -73,11 +73,24 @@
   color: $accentPrimary;
 }
 
+/* Fixed white tile so every logo renders at the same size, whatever its shape */
 .project-image {
-  min-height: 80px;
+  height: 140px;
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid $lightBorder1;
+  border-radius: 10px;
+}
+
+.project-image .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .projects-container {

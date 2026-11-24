@@ -5,7 +5,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {greeting, socialMediaLinks, isHireable} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import {renderBold} from "../../utils";
+import {renderBold, toDriveDownloadUrl} from "../../utils";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -73,8 +73,8 @@ export default function Greeting() {
                 <Button text="View Projects" href="#projects" />
                 {greeting.resumeLink && (
                   <Button
-                    text="Resume"
-                    href={greeting.resumeLink}
+                    text="Download Resume"
+                    href={toDriveDownloadUrl(greeting.resumeLink)}
                     newTab={true}
                     variant="outline"
                   />

@@ -377,7 +377,11 @@ const contactInfo = {
   subtitle:
     "Open to **AI-enabled backend** roles at product companies. Let's discuss architecture, SaaS, or **LLM-powered** products.",
   number: "+91 7004083341",
-  email_address: "shubhamkumargupta8@gmail.com"
+  email_address: "shubhamkumargupta8@gmail.com",
+  // Contact form (shown when REACT_APP_WEB3FORMS_ACCESS_KEY is set)
+  formTitle: "Let's Connect",
+  formSubtitle:
+    "Hiring a backend developer? Share the opportunity details, and I'll get back to you via email."
 };
 
 const twitterDetails = {
