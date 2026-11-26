@@ -26,7 +26,7 @@ const greeting = {
   email: "shubhamkumargupta8@gmail.com",
   phone: "+91 7004083341",
   resumeLink:
-    "https://drive.google.com/file/d/15o9svmAaw9BnVUJ3Q5cZFMlbuQ6QAqLk/view?usp=sharing",
+    "https://drive.google.com/file/d/1_SfRA7Pw-Qz1KcguWjd5pGeUFL13rYfW/view?usp=sharing",
   displayGreeting: true
 };
 
